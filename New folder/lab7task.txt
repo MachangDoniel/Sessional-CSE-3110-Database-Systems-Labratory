@@ -1,0 +1,22 @@
+drop table dept;
+
+set pagesize 200;
+set linesize 200;
+
+Create table dept(
+dept_id number(20),
+dept_name varchar(30),
+faculty varchar(30),
+no_of_student number(20),
+primary key(dept_id)
+);
+
+describe dept;
+
+insert into dept(dept_id,dept_name,faculty,no_of_student)values(7,'CSE','EE',120);
+insert into dept(dept_id,dept_name,faculty,no_of_student)values(3,'EEE','EE',120);
+insert into dept(dept_id,dept_name,faculty,no_of_student)values(1,'CE','CE',120);
+insert into dept(dept_id,dept_name,faculty,no_of_student)values(5,'ME','ME',120);
+insert into dept(dept_id,dept_name,faculty,no_of_student)values(2,'ECE','EE',60);
+
+select * from dept;
